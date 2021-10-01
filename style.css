@@ -6,6 +6,12 @@
     text-align: center;
     padding: 20px;
 }
+.hide{
+  display: none;
+}
+.bg1{
+  background-color: aqua;
+}
 .border{
     background-color: teal;
     height: 10px;
@@ -17,7 +23,6 @@
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    background-image: url("bc.jpg");
 }
 .sections1{
     width: 100%;
@@ -33,9 +38,7 @@
     margin:5px;
     padding-bottom: 5px;
 }
-.div2{
-background-color: blue;
-}
+
 /* #btn{
     border: none;
     background-color: yellow;
@@ -47,7 +50,12 @@ background-color: blue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 180px;
 } */
-
+.firstInput{
+  text-align: center;
+  width: 800px;
+  margin: 30px;
+  margin-left: 100px;
+}
 #output{
     font-size: 30px;
     text-align: center;
