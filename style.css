@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 .head{
     width: 100%;
     height: 80px;
@@ -20,7 +23,7 @@
     height: 10px;
 }
 
-.sections{
+.sections1{
     width: 100%;
     float:left;
     margin-top: 10px;
@@ -28,7 +31,7 @@
     margin-right: 10px;
     background-color:bisque; 
 }
-.sections1{
+.sections{
     width: 100%;
     float:left;
     margin-top: 10px;

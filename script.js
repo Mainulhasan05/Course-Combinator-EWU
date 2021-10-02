@@ -1,9 +1,8 @@
+
 function createSection(){
     let noOfCourse=document.getElementById("no-of-course").value;
-    console.log(noOfCourse);
     if(noOfCourse<=5){
         let item=document.querySelectorAll(".hide");
-        console.log(item);
         for(let i=0; i<item.length; i++){
             item[i].style.display="none";
         }
@@ -15,6 +14,15 @@ function createSection(){
         alert("Can't take more than 5 courses.")
     }
 
+}
+function setValues(){
+    let courseNameSec=document.querySelectorAll(".courseDetails");
+    let courseSectionField=document.querySelectorAll(".c1");
+    let cName=courseNameSec[0].value;
+    for(let i=0; i<courseSectionField.length;i++){
+        courseSectionField[i].value=cName;
+        i++;
+    }
 }
 
 var total=3;
