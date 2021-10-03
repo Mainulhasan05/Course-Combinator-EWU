@@ -68,6 +68,9 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 180px;
 } */
+.new1{
+  display: none;
+}
 .firstInput{
   text-align: center;
   width: 800px;
