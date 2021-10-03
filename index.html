@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    
-    <title>Course Schduler</title>
+    <title>Course Combinator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js">
     </script>
@@ -13,7 +13,7 @@
     
 <!--<img src="header.png" alt="" class="head">-->
 <div class="head">
-    <h1 >Course Scheduler</h1> 
+    <h1 >Course Combinator</h1> 
 </div>
 <!--<h1 class="head">Course Scheduler</h1>-->
 <div class="border">
@@ -36,7 +36,7 @@
             <span class="input-group-text">Course1</span>
             <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control courseDetails">
             <!-- <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control courseDetails"> -->
-            <button onclick="setValues()" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
+            <button onclick="setValue(1)" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
           </div>
     </p>
         </div>
@@ -67,7 +67,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control c1" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section">
              </div>
              <div class="div1"><!--Days part-->
                 
@@ -122,7 +122,7 @@
              </div>
              
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control c1" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section">
              </div>
 
              <div class="div1" ><!--Days part-->
@@ -177,7 +177,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control c1" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section">
              </div>
              <div class="div1" ><!--3rd Days part-->
                 
@@ -231,7 +231,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control c1" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section">
              </div>
              <div class="div1" ><!--4th Days part-->
                 
@@ -284,7 +284,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control c1" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section">
              </div>
              <div class="div1" ><!--4th Days part-->
                 
@@ -362,13 +362,13 @@
 <!--Course2 begins here-->
 <section class="sections1">
     <div class="hide">
-        <div style="width: 800px;"> <!--This part for course & section input-->
+        <div style="width: 500px;"> <!--This part for course & section input-->
             <p>
                 <div class="input-group">
                     <span class="input-group-text">Course2</span>
-                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control">
-                    <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control">
-                    <button style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
+                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control courseDetails">
+                    <!-- <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control"> -->
+                    <button onclick="setValue(2)" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
                   </div>
             </p>
                 </div>
@@ -397,7 +397,7 @@
       
          <section class="sections1"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -451,7 +451,7 @@
          <!--Course2 running-->
          <section class="sections1"><!--Values part-->
              <div class="div1">
-                 <input type="text"  class="form-control" placeholder="Course">
+                 <input type="text"  class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -505,7 +505,7 @@
          
          <section class="sections1"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -559,7 +559,7 @@
          <!--Fourst part starts here-->
          <section class="sections1" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -612,7 +612,7 @@
          </section>
          <section class="sections1" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -686,13 +686,13 @@
 <!--Course3 begis here-->
 <section class="sections">
     <div class="hide">
-        <div style="width: 800px;"> <!--This part for course & section input-->
+        <div style="width: 500px;"> <!--This part for course & section input-->
             <p>
                 <div class="input-group">
                     <span class="input-group-text">Course3</span>
-                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control">
-                    <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control">
-                    <button style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
+                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control courseDetails">
+                    <!-- <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control"> -->
+                    <button onclick="setValue(3)" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
                   </div>
             </p>
                 </div>
@@ -720,7 +720,7 @@
          
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -774,7 +774,7 @@
          
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text"  class="form-control" placeholder="Course">
+                 <input type="text"  class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -828,7 +828,7 @@
          
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -882,7 +882,7 @@
          <!--Fourst part starts here-->
          <section id="new1" class="sections" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -935,7 +935,7 @@
          </section>
          <section id="new2" class="sections" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1009,13 +1009,13 @@
 <!--COurse4 begins here-->
 <section class="sections1">
     <div class="hide">
-        <div style="width: 800px;"> <!--This part for course & section input-->
+        <div style="width: 500px;"> <!--This part for course & section input-->
             <p>
                 <div class="input-group">
                     <span class="input-group-text">Course4</span>
-                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control">
-                    <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control">
-                    <button style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
+                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control courseDetails">
+                    <!-- <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control"> -->
+                    <button onclick="setValue(4)" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
                   </div>
             </p>
                 </div>
@@ -1043,7 +1043,7 @@
          
          <section class="sections1"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1097,7 +1097,7 @@
          
          <section class="sections1"><!--Values part-->
              <div class="div1">
-                 <input type="text"  class="form-control" placeholder="Course">
+                 <input type="text"  class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1151,7 +1151,7 @@
          
          <section class="sections1"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1205,7 +1205,7 @@
          <!--Fourst part starts here-->
          <section class="sections1" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1258,7 +1258,7 @@
          </section>
          <section class="sections1" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1334,13 +1334,13 @@
 <!--Course5 begins here-->
 <section class="sections">
     <div class="hide">
-        <div style="width: 800px;"> <!--This part for course & section input-->
+        <div style="width: 500px;"> <!--This part for course & section input-->
             <p>
                 <div class="input-group">
                     <span class="input-group-text">Course5</span>
-                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control">
-                    <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control">
-                    <button style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
+                    <input  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control courseDetails">
+                    <!-- <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control"> -->
+                    <button onclick="setValue(5)" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button>
                   </div>
             </p>
                 </div>
@@ -1368,7 +1368,7 @@
          
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1422,7 +1422,7 @@
          
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text"  class="form-control" placeholder="Course">
+                 <input type="text"  class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1476,7 +1476,7 @@
          
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
@@ -1583,7 +1583,7 @@
          </section>
          <section id="new2" class="sections" style="display: none;"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
                  <input type="text"  class="form-control" placeholder="Section">
