@@ -24,7 +24,7 @@ function setValue(arg){
     let cName=courseName[arg-1].value;
     // console.log("arg "+arg+" courseName: "+cName);
     let x=(arg-1)*5;
-    for(let i=x; i<x+4;i++){
+    for(let i=x; i<x+5;i++){
         courseSectionField[i].value=cName;
     }
 }
