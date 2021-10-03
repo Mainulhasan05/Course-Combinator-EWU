@@ -18,11 +18,11 @@ function createSection(){
 function setValue(arg){
     let courseName=document.querySelectorAll(".courseDetails");
     let courseSectionField=document.querySelectorAll(".c1");
-    console.log(courseName);
-    console.log("brew");
-    console.log(courseSectionField);
+    // console.log(courseName);
+    // console.log("brew");
+    // console.log(courseSectionField);
     let cName=courseName[arg-1].value;
-    console.log("arg "+arg+" courseName: "+cName);
+    // console.log("arg "+arg+" courseName: "+cName);
     let x=(arg-1)*5;
     for(let i=x; i<x+4;i++){
         courseSectionField[i].value=cName;
