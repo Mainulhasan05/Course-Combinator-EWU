@@ -1,14 +1,17 @@
-
+var arr=[];
 function createSection(){
     let noOfCourse=document.getElementById("no-of-course").value;
     if(noOfCourse<=5){
         let item=document.querySelectorAll(".hide");
         for(let i=0; i<item.length; i++){
             item[i].style.display="none";
+            arr[i]=0;
         }
         for(let i=0; i<noOfCourse; i++){
             item[i].style.display="block";
+            arr[i]=1;
         }
+
     }
     else{
         alert("Can't take more than 5 courses.")
@@ -355,22 +358,34 @@ function myFunction(param) {
 /* for lab needed indexs {2,3} ,{6,7}, {10,11} labobj*/
 }
 var numberOfRowPerCourse=[];
-function createNew(){
-    if(total==3){
-        var neww=document.getElementById("new1");
-        neww.style.display="block";
-        var neww=document.getElementById("removebtn");
-        neww.style.display="block";
-        total++;
+function createNew(param){
+    console.log("dhuking value "+arr[param-1]);
+    if(arr[param-1]<5){
+        arr[param-1]++;
+        console.log("first co "+arr[param-1]);
+        let newDiv=document.querySelectorAll(".new1");
+        console.log("2nd log "+arr[param-1]);
+        newDiv[arr[param-1]-2].style.display="block";
+    }else{
+        alert("Can't choose more than 5 sections");
     }
-    else if(total==4){
-        var neww=document.getElementById("new2");
-        neww.style.display="block";
-        total++;
-    }
-    else{
-        alert("Can't add more than 5 rows");
-    }
+    
+
+    // if(total==3){
+    //     var neww=document.getElementById("new1");
+    //     neww.style.display="block";
+    //     var neww=document.getElementById("removebtn");
+    //     neww.style.display="block";
+    //     total++;
+    // }
+    // else if(total==4){
+    //     var neww=document.getElementById("new2");
+    //     neww.style.display="block";
+    //     total++;
+    // }
+    // else{
+    //     alert("Can't add more than 5 rows");
+    // }
     
 }
 function remove(){
