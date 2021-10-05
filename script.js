@@ -359,13 +359,15 @@ function myFunction(param) {
 }
 var numberOfRowPerCourse=[];
 function createNew(param){
-    console.log("dhuking value "+arr[param-1]);
-    if(arr[param-1]<5){
-        arr[param-1]++;
-        console.log("first co "+arr[param-1]);
+    let index;
+            index=param*4+arr[param]-1;
+    console.log("dhuking value "+arr[param]);
+    if(arr[param]<5){
+        arr[param]++;
+        console.log("first co "+arr[param]);
         let newDiv=document.querySelectorAll(".new1");
-        console.log("2nd log "+arr[param-1]);
-        newDiv[arr[param-1]-2].style.display="block";
+        console.log("2nd log "+arr[param]);
+        newDiv[index].style.display="block";
     }else{
         alert("Can't choose more than 5 sections");
     }
