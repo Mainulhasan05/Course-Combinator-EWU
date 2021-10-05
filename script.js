@@ -394,6 +394,16 @@ function createNew(param){
     // }
     
 }
-function remove(){
-    
+function remove(param){
+    let index;
+    var rmvBtn=document.querySelectorAll("#removebtn");
+            index=param*4+arr[param]-1;
+            if(arr[param]==2){
+                rmvBtn[param].style.display="none";
+            }
+    if(arr[param]>1){
+        arr[param]--;
+        let newDiv=document.querySelectorAll(".new1");
+        newDiv[index-1].style.display="none";
+    }
 }
