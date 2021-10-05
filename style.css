@@ -92,7 +92,7 @@ body{
     height: 25px;
 }
  #removebtn{
-    margin-left: 290px;
+    /* margin-left: 290px; */
 } 
 .btns{
     width: 100%;

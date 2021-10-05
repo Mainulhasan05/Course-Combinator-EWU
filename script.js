@@ -358,9 +358,16 @@ function myFunction(param) {
 /* for lab needed indexs {2,3} ,{6,7}, {10,11} labobj*/
 }
 var numberOfRowPerCourse=[];
+
+
+
 function createNew(param){
     let index;
+    var rmvBtn=document.querySelectorAll("#removebtn");
             index=param*4+arr[param]-1;
+            if(arr[param]==1){
+                rmvBtn[param].style.display="block";
+            }
     if(arr[param]<5){
         arr[param]++;
         let newDiv=document.querySelectorAll(".new1");
@@ -388,16 +395,5 @@ function createNew(param){
     
 }
 function remove(){
-    if(total==4){
-        var neww=document.getElementById("new1");
-        neww.style.display="none";
-        var neww=document.getElementById("removebtn");
-        neww.style.display="none";
-        total--;
-    }
-    else{
-        var neww=document.getElementById("new2");
-        neww.style.display="none";
-        total--;
-    }
+    
 }
