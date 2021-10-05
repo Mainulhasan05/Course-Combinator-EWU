@@ -361,12 +361,9 @@ var numberOfRowPerCourse=[];
 function createNew(param){
     let index;
             index=param*4+arr[param]-1;
-    console.log("dhuking value "+arr[param]);
     if(arr[param]<5){
         arr[param]++;
-        console.log("first co "+arr[param]);
         let newDiv=document.querySelectorAll(".new1");
-        console.log("2nd log "+arr[param]);
         newDiv[index].style.display="block";
     }else{
         alert("Can't choose more than 5 sections");
