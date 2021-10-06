@@ -93,7 +93,7 @@ body{
 #removebtn{
   text-align: center;
     margin-left: 80px; 
-    display: block;
+    display: none;
 }
 .btns{
     width: 100%;
