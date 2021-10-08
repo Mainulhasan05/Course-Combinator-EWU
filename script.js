@@ -329,23 +329,27 @@ labObj[0]={
 }*/
 
 function myFunction(param) {
-     let whichOne=document.querySelectorAll("input");
+    const whichOne=document.querySelectorAll("#flexCheckDefault");
      const labObj=document.querySelectorAll("select");
-     let index=2;
+     let index=0;
+
      let d=2,t=3;
      if(param==1){
-         index=2;
+         index=0;
          d=2,t=3;
      }
      else{
          for(let x=0; x<param-1; x++){
-             index+=3;
+             index++;
              d+=4;
              t+=4;
          }
      }
-
+     console.log(whichOne);
+     console.log(index);
+// console.log(labObj[2]);
      if(whichOne[index].checked){
+         console.log("kire");
         labObj[d].disabled=false;
         labObj[t].disabled=false;
     }
