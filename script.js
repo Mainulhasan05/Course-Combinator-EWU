@@ -1,3 +1,7 @@
+function finalizeAll(){
+    
+}
+
 var arr=[];
 function createSection(){
     let noOfCourse=document.getElementById("no-of-course").value;
