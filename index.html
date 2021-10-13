@@ -27,6 +27,15 @@
 
       </div>
 </div>
+<!--             -->
+<!-- <div>
+    <label for="validationDefaultUsername" class="form-label">Username</label>
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control"   aria-describedby="inputGroupPrepend2" required>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div> -->
 <!--STORY BEGINS HERE, COURSE1-->
 <section class="sections">
     <div class="hide">
@@ -34,7 +43,7 @@
     <p>
         <div class="input-group">
             <span class="input-group-text">Course1</span>
-            <input onkeyup="setValue(1)"  placeholder="Please Enter course name" type="text" aria-label="First name" class="form-control courseDetails">
+            <input onkeyup="setValue(1)"  placeholder="Please Enter course name" type="text"  class="form-control courseDetails"required>
             <!-- <input style="margin-left: 10px;" placeholder="Please Enter section" type="text" aria-label="Last name" class="form-control courseDetails"> -->
             <!-- <button onclick="setValue(1)" style="margin-left: 10px;" type="button" class="btn btn-primary">Submit</button> -->
           </div>
@@ -61,13 +70,12 @@
          
          </section>
          
-         
          <section class="sections"><!--Values part-->
              <div class="div1">
-                 <input type="text" class="form-control c1" placeholder="Course">
+                 <input type="text" class="form-control c1" placeholder="Course" >
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1"><!--Days part-->
                 
@@ -114,15 +122,14 @@
                    
              </div>
              <!-- New Div-->  <!--First row ended-->
-         </section>
-         
+         </section> 
          <section class="sections new1"><!--Values part-->
              <div class="div1">
-                 <input type="text"  class="form-control c1" placeholder="Course">
+                 <input type="text"  class="form-control c1" placeholder="Course" >
              </div>
              
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
 
              <div class="div1" ><!--Days part-->
@@ -177,7 +184,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--3rd Days part-->
                 
@@ -231,7 +238,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--4th Days part-->
                 
@@ -284,7 +291,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--4th Days part-->
                 
@@ -350,7 +357,7 @@
                  </div>
                  <div id="btn">
 
-                    <button style="margin-left: 0px;  text-align: right;"  onclick="createNew(0)" class="btn btn-warning">Add new row</button>
+                    <button type="submit" style="margin-left: 0px;  text-align: right;"  onclick="createNew(0)" class="btn btn-warning">Add new row</button>
                  </div>
                  
          
@@ -405,7 +412,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1"><!--Days part-->
                 
@@ -451,6 +458,7 @@
                        </select>
                    
              </div>
+            
              <!-- New Div-->  <!--First row ended-->
          </section>
          <!--Course2 running-->
@@ -459,7 +467,7 @@
                  <input type="text"  class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--Days part-->
                 
@@ -513,7 +521,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--3rd Days part-->
                 
@@ -567,7 +575,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--4th Days part-->
                 
@@ -620,7 +628,7 @@
                  <input type="text" class="form-control c1" placeholder="Course">
              </div>
              <div class="div1"><!--Section part-->
-                 <input type="text"  class="form-control" placeholder="Section">
+                 <input type="text"  class="form-control" placeholder="Section" required>
              </div>
              <div class="div1" ><!--4th Days part-->
                 
@@ -689,7 +697,7 @@
                      </div>
                      <div id="btn">
     
-                        <button style="margin-left: 0px;  text-align: right;"  onclick="createNew(1)" class="btn btn-warning">Add new row</button>
+                        <button style="margin-left: 0px;  text-align: right;"  onclick="createNew(1)" class="btn btn-warning" type="submit">Add new row</button>
                      </div>
     
              </div>
@@ -1695,9 +1703,8 @@
 
 
 <section class="text-center" >
-    <button onclick="finalizeAll()" id="final" class="btn btn-success">Submit</button>
+        <button type="submit" onclick="finalizeAll()" id="final" class="btn btn-success">Submit</button>
 </section>
-
 <section class="sections">
     <p id="output"></p>
 </section>

@@ -95,6 +95,20 @@ body{
     margin-left: 80px; 
     display: none;
 }
+.fbtn{
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  border:1px solid red;
+  background-image: url(btn1.jpg);
+  image-orientation: from-image;
+}
+input{
+  text-transform:uppercase;
+}
 #final{
   /* final bttn effect */
   width: 150px;
